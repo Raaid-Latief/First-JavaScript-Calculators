@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="Calculator">
+
+
+    <p>Number of Hours
+        <input type="text"  id="hours" value ="0.00"/></p>
+
+    <p>Rate Per Hours     
+          <input type="text" id="rate" value ="0.00"/></p>
+
+    <p>Salary
+        <input type="text"  id="answer" /></p>
+
+        <input type="button" value="Calculate your Salary" onclick="salary()">
+
+</div>
+
+
+
+
+<!-- Salary Calculation -->
+
+<script>
+    function salary(){
+    let num_hours =(document.getElementById("hours").value);
+    let rate_perhour =(document.getElementById("rate").value);
+    let sum = num_hours * rate_perhour;
+    document.getElementById("answer").value = sum.toFixed(2);
+    }
+</script>
+
+
+
+
+<div>
+
+    
+    
+    <p>Length
+        <input type="text"  id="length" value ="0"/></p>
+
+    <p>Height     
+          <input type="text" id="height" value ="0"/></p>
+
+    <p>Area of Rectangle
+        <input type="text"  id="answer2" /></p>
+
+        <input type="button" value="Calculate the Area" onclick="area()">
+
+
+</div>
+
+
+<!-- Area Calculation -->
+
+<script>
+    function area(){
+    let length =(document.getElementById("length").value);
+    let height =(document.getElementById("height").value);
+    let sum = length * height;
+    document.getElementById("answer2").value = sum.toFixed();
+    }
+</script>
+
+
+
+
+    
+</body>
+</html>
